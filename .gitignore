@@ -1,2 +1,4 @@
 /.venv
 /mylib/__pycache__
+.coverage
+/__pycache__
