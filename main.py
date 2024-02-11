@@ -1,3 +1,3 @@
-from mylib.logic import wiki
+from mylib.logic import summary
 
-print(wiki())
+print(summary())

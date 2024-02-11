@@ -1,4 +1,4 @@
-from mylib.logic import wiki
+from mylib.logic import summary
 
 def test_summary():
-    assert "Jesus" in wiki()
+    assert "Jesus" in summary()
