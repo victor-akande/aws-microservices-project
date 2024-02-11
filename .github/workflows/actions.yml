@@ -26,6 +26,7 @@ jobs:
         make test
     - name: Format code
       run: |
-        #make format
+        # Format code using black
+        make format
     
     
