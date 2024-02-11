@@ -22,7 +22,8 @@ jobs:
         make lint
     - name: Test with pytest
       run: |
-        #make test
+        # test code using pytest
+        make test
     - name: Format code
       run: |
         #make format
