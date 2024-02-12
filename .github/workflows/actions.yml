@@ -18,15 +18,16 @@ jobs:
         make install
     - name: Lint with pylint
       run: |
-        # lint code using pylint
         make lint
     - name: Test with pytest
       run: |
-        # test code using pytest
         make test
     - name: Format code
       run: |
-        # Format code using black
         make format
+    - name: Build container
+      run: |
+        make build
+        
     
     

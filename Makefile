@@ -13,6 +13,7 @@ test:
 	python -m pytest -vv --cov=mylib test_*.py
 build:
 	#build 
+	docker build -t wiki-fastapi .
 deploy:
 	#deploy
 all: install format lint test build deploy
