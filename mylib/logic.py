@@ -1,5 +1,5 @@
 import wikipedia
-
+from textblob import TextBlob
 
 def summary(name="Jesus Christ", length=1):
     """Wikipedia Fetcher"""
@@ -12,3 +12,10 @@ def search(name):
 
     results = wikipedia.search(name)
     return results
+
+def phrases(name):
+    """Return phrases from Wikipedia"""
+
+    page = summary(name)
+    blob = TextBlob(page)
+    return blob.noun_phrases
